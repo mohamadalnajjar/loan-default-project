@@ -106,10 +106,11 @@ based on predicted default probabilities.
 ```text
 loan-default-project/
 │
-├── data/
 ├── figures/
+├── models/
 ├── notebooks/
+├── reports/
+├── results/
+├── slides/
 ├── README.md
-├── model_results.csv
-├── feature_importance.csv
-├── random_forest_model.pkl
+├── requirements.txt
