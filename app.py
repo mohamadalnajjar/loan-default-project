@@ -121,10 +121,16 @@ if st.button("Predict Default Risk"):
 
     if probability < 0.2:
         risk_band = "Low Risk"
+        decision = "Likely eligible for a loan"
+        decision_type = "success"
     elif probability < 0.5:
         risk_band = "Medium Risk"
+        decision = "May be eligible, but requires manual review"
+        decision_type = "warning"
     else:
         risk_band = "High Risk"
+        decision = "Not recommended for loan approval"
+        decision_type = "error"
 
     st.subheader("Prediction Result")
 
@@ -137,3 +143,16 @@ if st.button("Predict Default Risk"):
         st.warning(f"Risk Band: {risk_band}")
     else:
         st.error(f"Risk Band: {risk_band}")
+
+    st.subheader("Loan Eligibility Decision")
+
+    if decision_type == "success":
+        st.success(decision)
+    elif decision_type == "warning":
+        st.warning(decision)
+    else:
+        st.error(decision)
+
+    st.caption(
+        "This decision is based on the model's estimated default risk and should be reviewed by a financial officer before final approval."
+    )
