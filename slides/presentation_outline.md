@@ -168,7 +168,52 @@ The model can support:
 
 ---
 
-# Slide 12 — ROC Curve
+# Slide 12 — Graphical User Interface (GUI)
+
+## Purpose of the GUI
+
+The GUI was created so normal users can interact with the loan prediction system without writing code.
+
+## Main Functions
+
+- Allows the user to enter borrower financial information
+- Sends the entered values to the trained machine learning model
+- Displays a clear prediction result
+- Makes the project easier to test, demonstrate, and use
+
+## Include Figure
+
+- Screenshot of the GUI input screen
+
+---
+
+# Slide 13 — GUI Prediction Output
+
+## User-Friendly Result
+
+Instead of showing only technical model output, the GUI displays a simple message such as:
+
+- "You are eligible for a loan"
+- "You are not eligible for a loan"
+- "Manual review is recommended"
+
+## How the Output Is Decided
+
+- Low risk → Eligible
+- Medium risk → Needs further review
+- High risk → Not eligible
+
+## Why This Is Important
+
+The GUI turns the machine learning model into a practical application that can support real-world loan decision-making.
+
+## Include Figure
+
+- Screenshot of the GUI prediction/result screen
+
+---
+
+# Slide 14 — ROC Curve
 
 ## Include Figure
 
@@ -180,7 +225,7 @@ ROC-AUC ≈ 0.864
 
 ---
 
-# Slide 13 — Limitations
+# Slide 15 — Limitations
 
 ## Limitations
 
@@ -191,7 +236,7 @@ ROC-AUC ≈ 0.864
 
 ---
 
-# Slide 14 — Conclusion
+# Slide 16 — Conclusion
 
 ## Final Conclusion
 
@@ -201,7 +246,7 @@ ROC-AUC ≈ 0.864
 
 ---
 
-# Slide 15 — Questions
+# Slide 17 — Questions
 
 ## Thank You
 
